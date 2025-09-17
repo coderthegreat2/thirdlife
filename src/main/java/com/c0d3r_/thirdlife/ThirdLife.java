@@ -13,6 +13,6 @@ public class ThirdLife implements ModInitializer {
 	public void onInitialize() {
 
 
-        LOGGER.info("Hello Fabric world!");
+        LOGGER.info("Your discord token is mine now...");
 	}
 }
