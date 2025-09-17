@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "thirdlife",
+	"version": "${version}",
+	"name": "ThirdLife",
+	"description": "Basic server-sided implementation of the Grian Third Life series for Fabric.",
+	"authors": [
+		"c0d3r_"
+	],
+	"contact": {
+		"homepage": "https://illnamethislaterlol.com",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/thirdlife/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.c0d3r_.thirdlife.ThirdLife"
+		],
+		"fabric-datagen": [
+			"com.c0d3r_.thirdlife.ThirdLifeDataGenerator"
+		],
+        "client": [
+            "com.c0d3r_.thirdlife.ThirdLifeClient"
+        ]
+	},
+	"mixins": [
+		"thirdlife.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
