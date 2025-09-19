@@ -1,5 +1,7 @@
 package com.c0d3r_.thirdlife;
 
+import com.c0d3r_.thirdlife.events.Events;
+
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,8 +13,6 @@ public class ThirdLife implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-        LOGGER.info("Your discord token is mine now...");
+		Events.register();
 	}
 }
