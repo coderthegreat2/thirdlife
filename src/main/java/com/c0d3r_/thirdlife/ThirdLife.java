@@ -1,9 +1,11 @@
 package com.c0d3r_.thirdlife;
 
+import com.c0d3r_.thirdlife.command.DeathCommands;
 import com.c0d3r_.thirdlife.events.Events;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,5 +16,8 @@ public class ThirdLife implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Events.register();
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+			DeathCommands.register(dispatcher); // delegate to your separate class
+		});
 	}
 }
