@@ -43,7 +43,8 @@ public final class BanUtil {
 
         bans.add(entry);
         player.networkHandler.disconnect(Text.literal(
-                "You have been temporarily banned until " + expiresAt + (reason == null || reason.isBlank() ? "" : (": " + reason))
+                "You have been temporarily banned until " + expiresAt +
+                        (reason == null || reason.isBlank() ? "" : (": " + reason))
         ));
     }
 }
