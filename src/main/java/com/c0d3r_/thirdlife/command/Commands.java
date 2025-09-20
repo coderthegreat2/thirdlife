@@ -59,6 +59,7 @@ public final class Commands {
                     ServerCommandSource source = ctx.getSource();
                     ServerPlayerEntity self = source.getPlayer();
                     Stat<?> deathsStat = Stats.CUSTOM.getOrCreateStat(Stats.DEATHS);
+                    assert self != null;
                     int count = self.getStatHandler().getStat(deathsStat);
 
                     source.sendFeedback(() ->

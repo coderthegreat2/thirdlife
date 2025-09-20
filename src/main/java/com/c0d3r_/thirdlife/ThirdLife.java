@@ -19,5 +19,7 @@ public class ThirdLife implements ModInitializer {
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			Commands.register(dispatcher);
 		});
+
+		LOGGER.info("ThirdLife Initializing...");
 	}
 }
