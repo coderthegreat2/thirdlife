@@ -13,16 +13,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(EnchantmentHelper.class)
 public class EnchantmentHelperMixin {
     @Inject(
-            method = "calculateRequiredExperienceLevel",
-            at = @At("HEAD"),
-            cancellable = true
+        method = "calculateRequiredExperienceLevel",
+        at = @At("HEAD"),
+        cancellable = true
     )
     private static void bookshelfNerf(Random random, int slotIndex, int bookshelfCount,
                                                ItemStack stack, CallbackInfoReturnable<Integer> cir) {
-
         int result;
-
         EnchantableComponent enchantableComponent = (EnchantableComponent)stack.get(DataComponentTypes.ENCHANTABLE);
+
         if (enchantableComponent == null) {
             result = 0;
         } else {

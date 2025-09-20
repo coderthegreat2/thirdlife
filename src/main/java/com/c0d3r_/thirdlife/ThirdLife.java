@@ -1,7 +1,7 @@
 package com.c0d3r_.thirdlife;
 
 import com.c0d3r_.thirdlife.command.Commands;
-import com.c0d3r_.thirdlife.events.Events;
+import com.c0d3r_.thirdlife.event.Events;
 
 import net.fabricmc.api.ModInitializer;
 

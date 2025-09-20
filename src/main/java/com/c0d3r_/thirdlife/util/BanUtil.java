@@ -1,4 +1,4 @@
-package com.c0d3r_.thirdlife.utils;
+package com.c0d3r_.thirdlife.util;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.BannedPlayerEntry;
@@ -18,7 +18,7 @@ public final class BanUtil {
                 player.getGameProfile(),
                 new Date(),
                 "ThirdLIfe",
-                /*expires*/ null,
+                null,
                 reason == null ? "" : reason
         );
         bans.add(entry);
