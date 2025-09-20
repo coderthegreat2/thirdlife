@@ -1,5 +1,6 @@
 package com.c0d3r_.thirdlife.command;
 
+import com.c0d3r_.thirdlife.util.NameColor;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.CommandDispatcher;
@@ -33,6 +34,7 @@ public final class Commands {
                                 source.sendFeedback(() ->
                                         Text.literal("Set " + target.getName().getString() + "'s deaths to " + value), true);
                                 target.sendMessage(Text.literal("Your death count was set to " + value));
+                                NameColor.nameColorUtil(target);
                                 return Command.SINGLE_SUCCESS;
                             })
                         )
