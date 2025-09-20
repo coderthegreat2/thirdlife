@@ -21,6 +21,7 @@ public final class BanUtil {
                 null,
                 reason == null ? "" : reason
         );
+
         bans.add(entry);
 
         player.networkHandler.disconnect(Text.literal(

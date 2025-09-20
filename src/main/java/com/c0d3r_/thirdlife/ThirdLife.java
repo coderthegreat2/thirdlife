@@ -16,6 +16,7 @@ public class ThirdLife implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Events.register();
+
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			Commands.register(dispatcher);
 		});
