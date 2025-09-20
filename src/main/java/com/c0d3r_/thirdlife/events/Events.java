@@ -1,6 +1,6 @@
 package com.c0d3r_.thirdlife.events;
 
-import com.c0d3r_.thirdlife.utils.DeathInfo;
+import com.c0d3r_.thirdlife.utils.DeathCounter;
 import com.c0d3r_.thirdlife.utils.SemiHardcore;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
@@ -14,7 +14,6 @@ public final class Events {
     private Events() {}
 
     public static void register() {
-
 
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
             if (!(entity instanceof ServerPlayerEntity player)) return;
@@ -35,7 +34,7 @@ public final class Events {
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             ServerPlayerEntity player = handler.player;
-            int deaths = DeathInfo.getDeaths(player);
+            int deaths = DeathCounter.getDeaths(player);
             MutableText multiple = Text.literal("You have " + (3 - deaths) + " lives remaining");
             MutableText last =Text.literal("You have 1 life remaining. You can now kill other players.");
 

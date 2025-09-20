@@ -6,10 +6,10 @@ import net.minecraft.server.network.ServerPlayerEntity;
 
 public class SemiHardcore {
     public static void checkDeaths(ServerPlayerEntity player) {
-        int priorDeaths = DeathInfo.getDeaths(player);
+        int priorDeaths = DeathCounter.getDeaths(player);
         if (priorDeaths == 3) {
             forceDropAndWipeInventory(player);
-            BanUtil.banForever(player, "Out of lives...");
+            BanUtil.ban(player, "Out of lives...");
         }
     }
 
