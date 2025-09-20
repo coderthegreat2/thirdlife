@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#"],
+  "key": {
+    "#": "minecraft:barrier"
+  },
+  "result": { "id": "minecraft:respawn_anchor", "count": 1 }
+}
