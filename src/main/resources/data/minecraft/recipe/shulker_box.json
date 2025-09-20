@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "/#/",
+    "///"
+  ],
+  "key": {
+    "#": "minecraft:chest",
+    "/": "minecraft:ender_pearl"
+  },
+  "result": {
+    "id": "minecraft:shulker_box",
+    "count": 1
+  }
+}
