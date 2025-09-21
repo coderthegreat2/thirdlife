@@ -1,8 +1,6 @@
 just a simple server-sided fabric implementation of Grian's third life series so that you dont have to use spigot.
 
-THIS MOD IS INTENDED FOR SERVERS ONLY AND WILL NOT BAN PLAYERS IF USED IN SINGLEPLAYER
-
-This mod is entirely server-sided and is not needed to join the modded server.
+This mod is entirely server-sided and is not needed on the client to play on the modded server.
 
 Requires fabric API to function properly.
 
