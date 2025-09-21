@@ -21,6 +21,6 @@ public class ThirdLife implements ModInitializer {
 			Commands.register(dispatcher);
 		});
 
-		LOGGER.info("ThirdLife Initializing...");
+		LOGGER.info("ThirdLife Initialized");
 	}
 }
