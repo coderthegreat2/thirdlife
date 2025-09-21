@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.c0d3r_.thirdlife.mixin",
+  "package": "com.c0d3r_.thirdlife",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
