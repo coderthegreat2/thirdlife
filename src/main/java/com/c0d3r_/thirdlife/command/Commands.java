@@ -15,8 +15,6 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 
 public final class Commands {
-    private Commands() {}
-
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         // /setdeaths <player> <value>
         dispatcher.register(
